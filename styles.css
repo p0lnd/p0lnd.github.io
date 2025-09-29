@@ -1,0 +1,177 @@
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-image:url('https://i.pinimg.com/736x/fd/7e/ea/fd7eea0d2fb1c838234bf730cb24a094.jpg');
+    background-size:contain;
+}
+
+.box {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgb(239, 190, 213);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 2.2em;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.profile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.bio {
+    flex: 2;
+    min-width: 300px;
+}
+
+.bio h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.bio p {
+    margin-bottom: 15px;
+}
+
+.playlist h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.playlist {
+    background: #ffd1f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.song {
+    padding: 10px 15px;
+    border-bottom: 1px dashed #c57ee9;
+}
+
+.song-title:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+.song:hover {
+    background: #ffadec;
+    border-radius: 5px;
+}
+span {
+    color: #621067;
+    font-weight: bold;
+}
+
+.song-title {
+    font-weight: bold;
+    color: #48255a;
+}
+
+.contacts {
+    padding: 20px 0;
+}
+
+.contacts h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.contact-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-links li {
+    margin: 0;
+}
+
+.contact-links a {
+    color: #b5498a;
+    font-size: 1.1em;
+    padding: 8px 16px;
+    border: 2px solid #b5498a;
+    border-radius: 25px;
+}
+
+.contact-links a:hover {
+    color: white;
+    background-color: #b5498a;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-links {
+        gap: 15px;
+    }
+    
+    .contact-links a {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .tagline {
+        font-size: 1em;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .contact-links a {
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+}
