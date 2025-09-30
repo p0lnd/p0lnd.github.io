@@ -133,27 +133,6 @@ span {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
-    .container {
-        margin: 20px;
-        padding: 20px;
-    }
-    
-    .about-section {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .contact-links {
-        gap: 15px;
-    }
-    
-    .contact-links a {
-        font-size: 1em;
-        padding: 6px 12px;
-    }
-}
-
 @media (max-width: 480px) {
     h1 {
         font-size: 1.8em;
@@ -174,4 +153,5 @@ span {
         width: 200px;
         text-align: center;
     }
+
 }
